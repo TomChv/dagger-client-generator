@@ -13,5 +13,5 @@ func (t *Textgen) GenerateClient(
 	introspectionJSON *dagger.File,
 	outputDir string,
 ) (*dagger.Directory, error) {
-	return dag.Directory().WithDirectory(outputDir, dag.Directory().WithNewFile("hello.txt", "hello world 2")), nil
+	return dag.Directory().WithDirectory(outputDir, dag.Directory().WithNewFile("hello.txt", "hello world v0.0.2")), nil
 }
